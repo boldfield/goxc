@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/laher/goxc/config"
+	"github.com/boldfield/goxc/config"
 )
 
 func TestRemove(t *testing.T) {

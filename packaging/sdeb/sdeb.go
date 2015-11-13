@@ -25,8 +25,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/laher/goxc/archive"
-	"github.com/laher/goxc/core"
+	"github.com/boldfield/goxc/archive"
+	"github.com/boldfield/goxc/core"
 	//"text/template"
 )
 

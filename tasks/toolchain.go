@@ -24,10 +24,10 @@ import (
 	"os/signal"
 	"path/filepath"
 
-	"github.com/laher/goxc/config"
-	"github.com/laher/goxc/core"
-	"github.com/laher/goxc/executils"
-	"github.com/laher/goxc/platforms"
+	"github.com/boldfield/goxc/config"
+	"github.com/boldfield/goxc/core"
+	"github.com/boldfield/goxc/executils"
+	"github.com/boldfield/goxc/platforms"
 )
 
 //runs automatically

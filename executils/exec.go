@@ -34,8 +34,8 @@ import (
 
 	// Tip for Forkers: please 'clone' from my url and then 'pull' from your url. That way you wont need to change the import path.
 	// see https://groups.google.com/forum/?fromgroups=#!starred/golang-nuts/CY7o2aVNGZY
-	"github.com/laher/goxc/config"
-	"github.com/laher/goxc/platforms"
+	"github.com/boldfield/goxc/config"
+	"github.com/boldfield/goxc/platforms"
 )
 
 var (
@@ -83,12 +83,12 @@ func buildFlags(args map[string]interface{}, flag string) string {
 	for k, v := range args {
 		switch typedV := v.(type) {
 		case string:
-			_, err := buf.WriteString(flag + " " + k + "='" + typedV + "' ")
+			_, err := buf.WriteString(flag + " " + k + " '" + typedV + "' ")
 			if err != nil {
 				log.Printf("Error writing flags")
 			}
 		default:
-			_, err := buf.WriteString(fmt.Sprintf("%s %s='%v' ", flag, k, typedV))
+			_, err := buf.WriteString(fmt.Sprintf("%s %s '%v' ", flag, k, typedV))
 			if err != nil {
 				log.Printf("Error writing flags")
 			}

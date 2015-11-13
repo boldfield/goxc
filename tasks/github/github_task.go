@@ -1,6 +1,6 @@
 package github
 
-import "github.com/laher/goxc/tasks"
+import "github.com/boldfield/goxc/tasks"
 
 //runs automatically
 func init() {

@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/laher/goxc/tasks"
-	"github.com/laher/goxc/tasks/httpc"
+	"github.com/boldfield/goxc/tasks"
+	"github.com/boldfield/goxc/tasks/httpc"
 )
 
 var apikey = flag.String("api-key", "", "API key")
@@ -15,7 +15,7 @@ var (
 	version   = "v0.16.0-testx2"
 	tagName   = "v0.16.0-testx"
 	apihost   = "https://api.github.com"
-	owner     = "laher"
+	owner     = "boldfield"
 	repo      = "goxc"
 	isVerbose = true
 )

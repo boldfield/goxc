@@ -31,9 +31,9 @@ import (
 
 	// Tip for Forkers: please 'clone' from my url and then 'pull' from your url. That way you wont need to change the import path.
 	// see https://groups.google.com/forum/?fromgroups=#!starred/golang-nuts/CY7o2aVNGZY
-	"github.com/laher/goxc/core"
-	"github.com/laher/goxc/tasks/httpc"
-	"github.com/laher/goxc/typeutils"
+	"github.com/boldfield/goxc/core"
+	"github.com/boldfield/goxc/tasks/httpc"
+	"github.com/boldfield/goxc/typeutils"
 )
 
 const TASK_BINTRAY = "bintray"
@@ -309,8 +309,6 @@ func publish(apihost, user, apikey, subject, repository, pkg, version string, is
 	}
 	return err
 }
-
-
 
 //NOTE: not necessary.
 //POST /packages/:subject/:repo/:package/versions
